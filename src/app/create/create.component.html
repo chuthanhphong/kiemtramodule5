@@ -1,0 +1,24 @@
+<form [formGroup]="playerForm" (ngSubmit)="create()">
+  <table>
+    <tr>
+      <td>Name</td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td>champ</td>
+      <td><input type="text" formControlName="champ"></td>
+    </tr>
+    <tr>
+      <td>KDA</td>
+      <td><input type="text" formControlName="kda"></td>
+    </tr>
+    <tr>
+      <td>Des</td>
+      <td><input type="text" formControlName="des"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Create</button></td>
+    </tr>
+  </table>
+</form>
