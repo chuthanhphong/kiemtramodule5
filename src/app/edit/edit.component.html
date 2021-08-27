@@ -1,1 +1,24 @@
-<p>edit works!</p>
+<form [formGroup]="playerForm" (ngSubmit)="edit(id)">
+  <table>
+    <tr>
+      <td>Name</td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td>Champ</td>
+      <td><input type="text" formControlName="champ"></td>
+    </tr>
+    <tr>
+      <td>Kda</td>
+      <td><input type="text" formControlName="kda"></td>
+    </tr>
+    <tr>
+      <td>des</td>
+      <td><input type="text" formControlName="des"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Edit</button></td>
+    </tr>
+  </table>
+</form>

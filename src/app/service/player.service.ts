@@ -22,9 +22,14 @@ export class PlayerService {
   }
 
   edit(id: number, player: Player): Observable<Player> {
-    return this.http.put<Player>(this.API + '/'  + id, player);
+    return this.http.put<Player>(this.API + '/' + id, player);
   }
+
   delete(id: number): Observable<Player> {
-    return this.http.delete<Player>(this.API  + '/' + id);
+    return this.http.delete<Player>(this.API + '/' + id);
+  }
+
+  findById(id: number): Observable<Player> {
+    return this.http.get <Player>(this.API + '/' + id);
   }
 }
